@@ -32,7 +32,7 @@ a {
 }
 
 ::selection {
-  background: rgba(216, 205, 244, 0.8);
+  background: rgba(213, 233, 93, 0.48);
   color: #2e2940;
 }
 
@@ -42,11 +42,11 @@ a {
   }
 
   .soft-card {
-    @apply rounded-2xl border border-white/70 bg-white/70 shadow-soft backdrop-blur transition-colors dark:border-white/10 dark:bg-slate-900/60 dark:shadow-soft-dark;
+    @apply relative overflow-hidden rounded-[18px] border border-[#d8e2c8]/80 bg-white/75 shadow-soft backdrop-blur transition-colors dark:border-white/10 dark:bg-slate-900/60 dark:shadow-soft-dark;
   }
 
   .pill {
-    @apply inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/70 px-4 py-2 text-sm font-medium text-ink/75 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/10 dark:text-slate-100/75;
+    @apply inline-flex items-center gap-2 rounded-full border border-[#d5e95d]/40 bg-white/70 px-4 py-2 text-sm font-medium text-[#2f765f] shadow-sm backdrop-blur dark:border-[#d5e95d]/25 dark:bg-white/10 dark:text-[#cddf78];
   }
 
   .section-title {
@@ -58,6 +58,25 @@ a {
   }
 
   .focus-ring {
-    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-lavender focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-slate-950;
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d5e95d] focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-slate-950;
+  }
+}
+
+@layer utilities {
+  .poly-corner::before {
+    content: '';
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 112px;
+    height: 78px;
+    clip-path: polygon(0 0, 100% 0, 70% 42%, 48% 100%, 0 78%);
+    background:
+      linear-gradient(135deg, rgba(213, 233, 93, 0.42) 0 42%, rgba(47, 138, 114, 0.34) 42% 67%, rgba(240, 196, 168, 0.28) 67% 100%);
+    pointer-events: none;
+  }
+
+  .dark .poly-corner::before {
+    background:
+      linear-gradient(135deg, rgba(205, 223, 120, 0.2) 0 42%, rgba(119, 188, 166, 0.2) 42% 67%, rgba(223, 184, 159, 0.14) 67% 100%);
   }
 }

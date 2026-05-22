@@ -24,6 +24,13 @@ const butterflyFunctions = [
   },
 ];
 
+const iconShapes = [
+  'bg-[#d5e95d] text-[#2f765f] [clip-path:polygon(18%_0,100%_14%,82%_100%,0_72%)]',
+  'bg-[#2f8a72] text-white [clip-path:polygon(0_18%,72%_0,100%_62%,42%_100%)]',
+  'bg-[#f0c4a8] text-[#6a5a54] [clip-path:polygon(26%_0,100%_34%,74%_100%,0_74%,6%_18%)]',
+  'bg-[#86a85b] text-white [clip-path:polygon(12%_0,100%_0,86%_82%,34%_100%,0_42%)]',
+];
+
 function LittleButterflyIntro() {
   return (
     <section id="little-butterfly" className="section-shell">
@@ -51,10 +58,10 @@ function LittleButterflyIntro() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.45, delay: index * 0.05 }}
-              className="soft-card p-6"
+              className="soft-card poly-corner p-6"
             >
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-sage/70 text-emerald-800 dark:bg-emerald-300/20 dark:text-emerald-100">
+              <div className="relative z-10 flex items-start gap-4">
+                <div className={`flex h-14 w-14 shrink-0 items-center justify-center ${iconShapes[index % iconShapes.length]}`}>
                   <Icon size={21} />
                 </div>
                 <div>

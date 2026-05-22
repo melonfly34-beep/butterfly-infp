@@ -12,7 +12,7 @@ const navItems = [
 function ButterflyPersonMark() {
   return (
     <svg className="h-11 w-10 shrink-0" viewBox="0 0 70 82" fill="none" aria-hidden="true">
-      <ellipse className="fill-slate-400/18 dark:fill-white/10" cx="31" cy="76" rx="15" ry="3" />
+      <ellipse className="fill-slate-400/20 dark:fill-white/10" cx="31" cy="76" rx="15" ry="3" />
 
       <path className="fill-[#2f8a72] dark:fill-[#77bca6]" d="m8 10 12 5-9 10z" />
       <path className="fill-[#7fb59d] dark:fill-[#9bd3bd]" d="m20 15 10-9-4 16z" />
@@ -102,7 +102,7 @@ function Navbar() {
   };
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/45 bg-cream/72 shadow-[0_10px_34px_rgba(90,102,94,0.10)] backdrop-blur-2xl transition-colors dark:border-white/10 dark:bg-slate-950/58 dark:shadow-[0_10px_34px_rgba(0,0,0,0.24)]">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/45 bg-cream/70 shadow-[0_10px_34px_rgba(90,102,94,0.10)] backdrop-blur-2xl transition-colors dark:border-white/10 dark:bg-slate-950/60 dark:shadow-[0_10px_34px_rgba(0,0,0,0.24)]">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-6 lg:px-8" aria-label="主导航">
         <a
           href="#top"

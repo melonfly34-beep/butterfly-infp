@@ -43,11 +43,28 @@ function GrassTuft({ className = '' }) {
 function Butterfly({ className = '' }) {
   return (
     <svg className={className} viewBox="0 0 78 54" fill="none" aria-hidden="true">
-      <path className="fill-blush/80 dark:fill-fuchsia-200/35" d="M37 26C23 9 8 6 6 19c-2 14 15 15 29 10z" />
-      <path className="fill-lavender/80 dark:fill-violet-200/35" d="M41 26C55 9 70 6 72 19c2 14-15 15-29 10z" />
-      <path className="fill-sage/80 dark:fill-emerald-200/30" d="M36 30c-12 3-22 11-15 19 7 7 15-5 17-17z" />
-      <path className="fill-mist/90 dark:fill-sky-200/30" d="M42 30c12 3 22 11 15 19-7 7-15-5-17-17z" />
+      <path className="fill-[#2f8a72]/85 dark:fill-[#77bca6]/35" d="M37 26C23 9 8 6 6 19c-2 14 15 15 29 10z" />
+      <path className="fill-[#7fb59d]/85 dark:fill-[#9bd3bd]/35" d="M41 26C55 9 70 6 72 19c2 14-15 15-29 10z" />
+      <path className="fill-[#d5e95d]/85 dark:fill-[#cddf78]/32" d="M36 30c-12 3-22 11-15 19 7 7 15-5 17-17z" />
+      <path className="fill-[#f0c4a8]/80 dark:fill-[#dfb89f]/28" d="M42 30c12 3 22 11 15 19-7 7-15-5-17-17z" />
       <path className="fill-[#5b5266] dark:fill-white/70" d="M36 17h6v27h-6z" />
+    </svg>
+  );
+}
+
+function PolyShard({ className = '', tone = 'green' }) {
+  const tones = {
+    green: ['#2f8a72', '#7fb59d', '#1f6f5a'],
+    lime: ['#d5e95d', '#bcd84f', '#86a85b'],
+    skin: ['#f0c4a8', '#d9a88e', '#b98b76'],
+  };
+  const [a, b, c] = tones[tone];
+
+  return (
+    <svg className={className} viewBox="0 0 120 92" fill="none" aria-hidden="true">
+      <path fill={a} d="m12 20 45-14 24 32-42 20z" />
+      <path fill={b} d="m57 6 50 22-26 10z" />
+      <path fill={c} d="m39 58 42-20 26 36-58 10z" />
     </svg>
   );
 }
@@ -70,21 +87,25 @@ function Deer({ className = '' }) {
 function ForestBackground() {
   return (
     <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(255,250,242,0.18)_0%,_rgba(238,244,247,0.08)_46%,_rgba(247,220,231,0.12)_100%)] dark:bg-[linear-gradient(180deg,_rgba(16,20,33,0.08)_0%,_rgba(22,29,44,0.18)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(255,250,242,0.18)_0%,_rgba(238,244,247,0.08)_46%,_rgba(213,233,93,0.08)_100%)] dark:bg-[linear-gradient(180deg,_rgba(16,20,33,0.08)_0%,_rgba(22,35,31,0.22)_100%)]" />
 
-      <Evergreen className="absolute -left-6 top-[10%] h-36 w-24 opacity-55 dark:opacity-30 sm:left-5 sm:h-44 sm:w-28" />
-      <Evergreen className="absolute left-[12%] top-[4%] hidden h-52 w-32 opacity-45 dark:opacity-25 md:block" flip />
-      <Evergreen className="absolute right-[12%] top-[7%] h-44 w-28 opacity-45 dark:opacity-25 md:h-56 md:w-36" />
-      <Evergreen className="absolute -right-8 top-[24%] h-40 w-28 opacity-45 dark:opacity-25 sm:right-6" flip />
+      <PolyShard className="absolute left-[22%] top-[10%] h-20 w-28 -rotate-12 opacity-18 dark:opacity-12" tone="lime" />
+      <PolyShard className="absolute right-[26%] top-[18%] hidden h-24 w-32 rotate-12 opacity-16 dark:opacity-10 md:block" tone="skin" />
+      <PolyShard className="absolute left-[46%] bottom-[16%] hidden h-24 w-32 -rotate-6 opacity-16 dark:opacity-10 lg:block" tone="green" />
+
+      <Evergreen className="absolute -left-6 top-[10%] h-36 w-24 opacity-62 dark:opacity-34 sm:left-5 sm:h-44 sm:w-28" />
+      <Evergreen className="absolute left-[12%] top-[4%] hidden h-52 w-32 opacity-50 dark:opacity-28 md:block" flip />
+      <Evergreen className="absolute right-[12%] top-[7%] h-44 w-28 opacity-52 dark:opacity-28 md:h-56 md:w-36" />
+      <Evergreen className="absolute -right-8 top-[24%] h-40 w-28 opacity-50 dark:opacity-28 sm:right-6" flip />
 
       <Rock className="absolute left-[4%] top-[31%] h-16 w-36 opacity-45 dark:opacity-22" />
       <Rock className="absolute right-[6%] top-[42%] hidden h-20 w-44 opacity-40 dark:opacity-20 md:block" />
       <GrassTuft className="absolute left-[18%] top-[43%] h-12 w-24 opacity-50 dark:opacity-28" />
       <GrassTuft className="absolute right-[20%] top-[26%] h-12 w-24 opacity-45 dark:opacity-25" />
 
-      <Butterfly className="absolute left-[7%] top-[64%] h-14 w-20 -rotate-12 opacity-45 dark:opacity-25" />
-      <Butterfly className="absolute right-[8%] top-[68%] h-16 w-24 rotate-12 opacity-38 dark:opacity-22" />
-      <Butterfly className="absolute left-[52%] top-[18%] hidden h-12 w-16 rotate-6 opacity-35 dark:opacity-20 lg:block" />
+      <Butterfly className="absolute left-[7%] top-[64%] h-14 w-20 -rotate-12 opacity-50 dark:opacity-25" />
+      <Butterfly className="absolute right-[8%] top-[68%] h-16 w-24 rotate-12 opacity-45 dark:opacity-22" />
+      <Butterfly className="absolute left-[52%] top-[18%] hidden h-12 w-16 rotate-6 opacity-42 dark:opacity-20 lg:block" />
 
       <Deer className="absolute bottom-[8%] right-[5%] hidden h-32 w-52 opacity-25 dark:opacity-15 lg:block" />
       <Evergreen className="absolute bottom-[1%] left-[6%] h-48 w-32 opacity-38 dark:opacity-22 md:h-60 md:w-40" />
