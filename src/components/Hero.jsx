@@ -12,7 +12,7 @@ function Hero() {
   };
 
   return (
-    <section className="section-shell relative grid min-h-[calc(100vh-3.5rem)] items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+    <section id="top" className="section-shell relative grid min-h-[calc(100vh-3.5rem)] items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
       <motion.div
         initial={{ opacity: 0, y: 22 }}
         animate={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ function Hero() {
 
         <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
           <a
-            href="#what-is-infp"
+            href="#test-links"
             className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-slate-700 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-100"
           >
             开始探索

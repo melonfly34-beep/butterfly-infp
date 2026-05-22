@@ -1,11 +1,7 @@
 import Hero from './components/Hero.jsx';
-import WhatIsINFP from './components/WhatIsINFP.jsx';
-import Traits from './components/Traits.jsx';
-import GrowthGuide from './components/GrowthGuide.jsx';
-import DailyStateTest from './components/DailyStateTest.jsx';
 import TestLinks from './components/TestLinks.jsx';
-import JournalPrompts from './components/JournalPrompts.jsx';
-import FAQ from './components/FAQ.jsx';
+import LittleButterflyIntro from './components/LittleButterflyIntro.jsx';
+import JungFunctionsIntro from './components/JungFunctionsIntro.jsx';
 import Footer from './components/Footer.jsx';
 import Navbar from './components/Navbar.jsx';
 
@@ -15,13 +11,9 @@ function App() {
       <Navbar />
       <main className="pt-16">
         <Hero />
-        <WhatIsINFP />
-        <Traits />
-        <GrowthGuide />
-        <DailyStateTest />
         <TestLinks />
-        <JournalPrompts />
-        <FAQ />
+        <LittleButterflyIntro />
+        <JungFunctionsIntro />
       </main>
       <Footer />
     </div>

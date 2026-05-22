@@ -4,13 +4,9 @@ import ThemeToggle from './ThemeToggle.jsx';
 
 const navItems = [
   { label: '首页', href: '#top' },
-  { label: 'INFP 是什么', href: '#what-is-infp' },
-  { label: '常见特质', href: '#traits' },
-  { label: '成长指南', href: '#growth-guide' },
-  { label: '状态测试', href: '#daily-state-test' },
-  { label: '探索小屋', href: '#test-links' },
-  { label: '日记 Prompt', href: '#journal-prompts' },
-  { label: 'FAQ', href: '#faq' },
+  { label: '测试链接', href: '#test-links' },
+  { label: '小蝴蝶简介', href: '#little-butterfly' },
+  { label: '荣格八维介绍', href: '#jung-functions' },
 ];
 
 function ForestMark() {
@@ -97,7 +93,7 @@ function Navbar() {
           <span className="sm:hidden">INFP 星球</span>
         </a>
 
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
