@@ -11,18 +11,33 @@ const navItems = [
 
 function ButterflyPersonMark() {
   return (
-    <svg className="h-9 w-11 shrink-0" viewBox="0 0 76 58" fill="none" aria-hidden="true">
-      <path className="fill-lavender/90 dark:fill-violet-200/45" d="M34 28C21 10 8 8 5 20 1 35 18 38 34 31z" />
-      <path className="fill-blush/90 dark:fill-fuchsia-200/45" d="M42 28C55 10 68 8 71 20c4 15-13 18-29 11z" />
-      <path className="fill-sage/90 dark:fill-emerald-200/35" d="M34 33c-12 2-21 10-15 18 7 8 16-3 18-15z" />
-      <path className="fill-mist dark:fill-sky-200/35" d="M42 33c12 2 21 10 15 18-7 8-16-3-18-15z" />
-      <path className="fill-[#d9e567] dark:fill-[#c8d980]" d="m28 14 12-8 13 9-4 18H31z" />
-      <path className="fill-[#f3cfb8] dark:fill-[#e7c2ad]" d="M28 19h21v18c0 6-4 10-10 10s-11-4-11-10z" />
-      <path className="fill-[#2f765f] dark:fill-[#78b9a3]" d="m30 36 9 5 9-5 9 18H21z" />
-      <path className="fill-[#27644f] dark:fill-[#5fa28d]" d="m39 41 9-5 9 18H39z" />
-      <path className="stroke-[#5b5266] dark:stroke-white/70" strokeWidth="2.2" strokeLinecap="round" d="M35 29h.1M44 29h.1M36 36c2 2 5 2 7 0M33 12 26 5M45 12l7-7" />
-      <path className="stroke-[#6d5a50] dark:stroke-[#c9b8ad]" strokeWidth="2.4" strokeLinecap="round" d="M31 54v-4M47 54v-4" />
-      <path className="fill-white/55 dark:fill-white/20" d="m13 20 12 2-10 9zM60 20l-12 2 10 9z" />
+    <svg className="h-11 w-10 shrink-0" viewBox="0 0 70 82" fill="none" aria-hidden="true">
+      <ellipse className="fill-slate-400/18 dark:fill-white/10" cx="31" cy="76" rx="15" ry="3" />
+
+      <path className="fill-[#2f8a72] dark:fill-[#77bca6]" d="m8 10 12 5-9 10z" />
+      <path className="fill-[#7fb59d] dark:fill-[#9bd3bd]" d="m20 15 10-9-4 16z" />
+      <path className="fill-[#2f8a72] dark:fill-[#77bca6]" d="m55 13 10-8-2 16z" />
+      <path className="fill-[#7fb59d] dark:fill-[#9bd3bd]" d="m55 13-9-8 1 16z" />
+
+      <path className="fill-[#d5e95d] dark:fill-[#cddf78]" d="M27 8 48 2 55 24 38 30 20 20z" />
+      <path className="fill-[#bcd84f] dark:fill-[#acc96b]" d="M20 20 38 30 28 63 10 53 13 29z" />
+      <path className="fill-[#e4ed7b] dark:fill-[#d5e58e]" d="M27 8 20 20 13 49 6 38 12 17z" />
+      <path className="fill-[#86a85b] dark:fill-[#91b979]" d="m20 20 18 10-8 17-15-9z" />
+
+      <path className="fill-[#f0c4a8] dark:fill-[#dfb89f]" d="m38 18 17 8-2 19-17 9-8-20z" />
+      <path className="fill-[#d9a88e] dark:fill-[#c89d89]" d="m55 26-2 19-8-5 2-17z" />
+      <path className="fill-[#2f765f] dark:fill-[#6fb39d]" d="m25 44 17-4 13 18-27 9z" />
+      <path className="fill-[#1f6f5a] dark:fill-[#5b9c88]" d="m28 67 27-9-10 19H27z" />
+      <path className="fill-[#67a26e] dark:fill-[#86c191]" d="m25 44 3 23-12-12z" />
+
+      <path className="stroke-[#f0c4a8] dark:stroke-[#dfb89f]" strokeWidth="4" strokeLinecap="round" d="m22 54-8 9M51 48l11 8" />
+      <path className="stroke-[#f0c4a8] dark:stroke-[#dfb89f]" strokeWidth="4" strokeLinecap="round" d="m30 67-8 10M47 66l-1 11" />
+      <path className="fill-[#f0c4a8] dark:fill-[#dfb89f]" d="m12 63 7 1-7 7zM20 77l8 1-9 4z" />
+
+      <path className="stroke-[#6a5a54] dark:stroke-[#f2e4d8]" strokeWidth="2" strokeLinecap="round" d="M43 31h.1M51 34h.1M45 41c2 2 5 2 7 0" />
+      <path className="stroke-[#8fb83d] dark:stroke-[#c7dc77]" strokeWidth="2" strokeLinecap="round" d="m62 56 1 13" />
+      <path className="fill-[#d7e84f] dark:fill-[#d8e575]" d="m63 49 3 6-3 4-3-4zM63 59l6 3-1 5-5-3zM63 59l-5 4-5-2 5-4zM63 49l-6-2-2-5 6 1zM63 49l5-4 5 1-4 5z" />
+      <circle className="fill-[#f6f2bd] dark:fill-[#f2edb0]" cx="63" cy="56" r="3" />
     </svg>
   );
 }
