@@ -9,15 +9,21 @@ const navItems = [
   { label: '荣格八维介绍', href: '#jung-functions' },
 ];
 
-function ForestMark() {
+function ButterflyPersonMark() {
   return (
-    <span className="relative flex h-8 w-10 items-end justify-center" aria-hidden="true">
-      <span className="absolute bottom-0 left-1 h-3 w-2 rounded-sm bg-[#8b6f58] dark:bg-[#9f816a]" />
-      <span className="absolute bottom-2 left-0 h-0 w-0 border-x-[9px] border-b-[22px] border-x-transparent border-b-[#3d8b74] dark:border-b-[#6db29a]" />
-      <span className="absolute bottom-0 right-2 h-3 w-2 rounded-sm bg-[#7a604e] dark:bg-[#9f816a]" />
-      <span className="absolute bottom-2 right-0 h-0 w-0 border-x-[11px] border-b-[28px] border-x-transparent border-b-[#2f765f] dark:border-b-[#83c0a9]" />
-      <span className="absolute right-8 top-1 h-3 w-3 rounded-full bg-sage/90 dark:bg-sage/70" />
-    </span>
+    <svg className="h-9 w-11 shrink-0" viewBox="0 0 76 58" fill="none" aria-hidden="true">
+      <path className="fill-lavender/90 dark:fill-violet-200/45" d="M34 28C21 10 8 8 5 20 1 35 18 38 34 31z" />
+      <path className="fill-blush/90 dark:fill-fuchsia-200/45" d="M42 28C55 10 68 8 71 20c4 15-13 18-29 11z" />
+      <path className="fill-sage/90 dark:fill-emerald-200/35" d="M34 33c-12 2-21 10-15 18 7 8 16-3 18-15z" />
+      <path className="fill-mist dark:fill-sky-200/35" d="M42 33c12 2 21 10 15 18-7 8-16-3-18-15z" />
+      <path className="fill-[#d9e567] dark:fill-[#c8d980]" d="m28 14 12-8 13 9-4 18H31z" />
+      <path className="fill-[#f3cfb8] dark:fill-[#e7c2ad]" d="M28 19h21v18c0 6-4 10-10 10s-11-4-11-10z" />
+      <path className="fill-[#2f765f] dark:fill-[#78b9a3]" d="m30 36 9 5 9-5 9 18H21z" />
+      <path className="fill-[#27644f] dark:fill-[#5fa28d]" d="m39 41 9-5 9 18H39z" />
+      <path className="stroke-[#5b5266] dark:stroke-white/70" strokeWidth="2.2" strokeLinecap="round" d="M35 29h.1M44 29h.1M36 36c2 2 5 2 7 0M33 12 26 5M45 12l7-7" />
+      <path className="stroke-[#6d5a50] dark:stroke-[#c9b8ad]" strokeWidth="2.4" strokeLinecap="round" d="M31 54v-4M47 54v-4" />
+      <path className="fill-white/55 dark:fill-white/20" d="m13 20 12 2-10 9zM60 20l-12 2 10 9z" />
+    </svg>
   );
 }
 
@@ -88,7 +94,7 @@ function Navbar() {
           onClick={(event) => handleNavClick(event, '#top')}
           className="focus-ring flex shrink-0 items-center gap-2 rounded-full pr-2 text-sm font-semibold tracking-normal text-ink dark:text-white"
         >
-          <ForestMark />
+          <ButterflyPersonMark />
           <span className="hidden sm:inline">蝴蝶种群观测笔记</span>
           <span className="sm:hidden">INFP 星球</span>
         </a>
