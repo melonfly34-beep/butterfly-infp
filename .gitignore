@@ -1,5 +1,11 @@
 node_modules
 dist
+dist-check
 .env
 .env.local
 .DS_Store
+*.log
+*.exe
+*.msi
+desktop-check.png
+node-index.json

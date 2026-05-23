@@ -5,12 +5,12 @@ const butterflyFunctions = [
   {
     title: 'Fi：内在价值的罗盘',
     icon: Compass,
-    text: '小蝴蝶常常先问“这件事对我来说是否真实、是否重要”。这不是任性，而是更习惯从内在价值感出发理解世界。',
+    text: '小蝴蝶常常会先问“这件事对我来说是否真实、是否重要”。这不是任性，而是倾向于从内在价值感出发理解世界。',
   },
   {
     title: 'Ne：向可能性展开翅膀',
     icon: Flower2,
-    text: '当一个想法出现时，Ne 会自然联想到更多可能：故事、关系、隐喻、未来版本。灵感多，方向也容易变多。',
+    text: '当一个想法出现时，Ne 可能会自然联想到更多可能：故事、关系、隐喻、未来版本。灵感很多，方向也容易变多。',
   },
   {
     title: 'Si：把记忆留在身上',
@@ -22,13 +22,6 @@ const butterflyFunctions = [
     icon: Sprout,
     text: 'Te 是小蝴蝶需要练习的落地能力：把灵感拆成步骤，把感受整理成决定，把想做的事推进一点点。',
   },
-];
-
-const iconShapes = [
-  'bg-[#d5e95d] text-[#2f765f] [clip-path:polygon(18%_0,100%_14%,82%_100%,0_72%)]',
-  'bg-[#2f8a72] text-white [clip-path:polygon(0_18%,72%_0,100%_62%,42%_100%)]',
-  'bg-[#f0c4a8] text-[#6a5a54] [clip-path:polygon(26%_0,100%_34%,74%_100%,0_74%,6%_18%)]',
-  'bg-[#86a85b] text-white [clip-path:polygon(12%_0,100%_0,86%_82%,34%_100%,0_42%)]',
 ];
 
 function LittleButterflyIntro() {
@@ -58,10 +51,10 @@ function LittleButterflyIntro() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.45, delay: index * 0.05 }}
-              className="soft-card poly-corner p-6"
+              className="soft-card p-6"
             >
-              <div className="relative z-10 flex items-start gap-4">
-                <div className={`flex h-14 w-14 shrink-0 items-center justify-center ${iconShapes[index % iconShapes.length]}`}>
+              <div className="flex items-start gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[#d8e2c8] bg-[#f6f8ef] text-[#2f765f] dark:border-white/10 dark:bg-white/10 dark:text-[#d7e84f]">
                   <Icon size={21} />
                 </div>
                 <div>

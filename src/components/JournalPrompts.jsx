@@ -12,7 +12,7 @@ function JournalPrompts() {
   };
 
   return (
-    <section className="section-shell">
+    <section id="journal-prompts" className="section-shell">
       <div className="soft-card overflow-hidden">
         <div className="grid gap-0 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="bg-[linear-gradient(140deg,_rgba(216,205,244,0.62),_rgba(247,220,231,0.62),_rgba(191,215,199,0.55))] p-7 dark:bg-[linear-gradient(140deg,_rgba(98,89,147,0.32),_rgba(115,79,116,0.24),_rgba(77,104,89,0.22))] sm:p-9">

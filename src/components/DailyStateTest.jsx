@@ -20,7 +20,7 @@ function DailyStateTest() {
   const result = resultKey ? stateResults[resultKey] : null;
 
   return (
-    <section className="section-shell">
+    <section id="daily-state-test" className="section-shell">
       <span className="pill">今日 INFP 状态测试</span>
       <h2 className="section-title mt-5">用四个问题，观察今天的自己。</h2>
       <p className="section-copy">

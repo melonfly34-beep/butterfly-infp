@@ -30,7 +30,7 @@ const guides = [
 
 function GrowthGuide() {
   return (
-    <section className="section-shell">
+    <section id="growth-guide" className="section-shell">
       <span className="pill">成长指南</span>
       <h2 className="section-title mt-5">不是逼自己变硬，而是学会更稳地柔软。</h2>
       <p className="section-copy">

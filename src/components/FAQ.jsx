@@ -7,7 +7,7 @@ function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="section-shell">
+    <section id="faq" className="section-shell">
       <span className="pill">常见误解 FAQ</span>
       <h2 className="section-title mt-5">把标签松开一点，人才更容易被看见。</h2>
       <p className="section-copy">

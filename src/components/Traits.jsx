@@ -36,7 +36,7 @@ function TraitGroup({ title, intro, items, icon: Icon, tone }) {
 
 function Traits() {
   return (
-    <section className="section-shell">
+    <section id="traits" className="section-shell">
       <span className="pill">常见特质</span>
       <h2 className="section-title mt-5">优势和挑战，常常来自同一套敏锐的系统。</h2>
       <p className="section-copy">
